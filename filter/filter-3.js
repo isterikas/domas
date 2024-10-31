@@ -14,8 +14,16 @@ const productsFilteredHof = products.filter(product => {
 
 /* ===============================C=O=D=E================================= */
 
-let productsFiltered = []
+const productsFiltered = []
 
+for (let i = 0; i < products.length; i++) {
+    if (products[i].price * (1 - products[i].discount)<500){
+        productsFiltered.push(products[i])
+    } else {
+      continue
+  }}
+
+console.log(productsFiltered);
 
 
 /* ===============================T=E=S=T================================= */

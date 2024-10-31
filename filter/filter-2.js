@@ -15,8 +15,15 @@ const studentsFilteredHof = students.filter(student => {
 
 /* ===============================C=O=D=E================================= */
 
-let studentsFiltered = []
+const studentsFiltered = []
+for (let i = 0; i < students.length; i++) {
+    if (students[i].scores.math<85){
+   studentsFiltered.push(students[i])
+    } else {
+      continue
+  }}
 
+console.log(studentsFiltered);
 
 
 /* ===============================T=E=S=T================================= */
