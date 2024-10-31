@@ -19,10 +19,10 @@ const users = [
 
 /* ===============================C=O=D=E================================= */
 
-let usersWithLowerCaseNames = []
+const usersWithLowerCaseNames = []
 
 for (let i = 0; i < users.length; i++) {
-  let lowerCaseArray = users[i].name.toLowerCase();
+  const lowerCaseArray = users[i].name.toLowerCase();
   usersWithLowerCaseNames.push(lowerCaseArray); 
   };
 console.log(usersWithLowerCaseNames);

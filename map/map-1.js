@@ -6,9 +6,9 @@ const names = ['Alice', 'Bob', 'Charlie', 'Daisy', 'Eve', 'Frank', 'Grace']
 
 /* ===============================C=O=D=E================================= */
 
-let namesUpperCase = [];
+const namesUpperCase = [];
 for (let i = 0; i < names.length; i++) {
-  let capitalizeArray = names[i].toUpperCase();
+  const capitalizeArray = names[i].toUpperCase();
   namesUpperCase.push(capitalizeArray); 
   };
 console.log(namesUpperCase);

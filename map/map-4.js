@@ -14,10 +14,10 @@ const users = [
 
 /* ===============================C=O=D=E================================= */
 
-let userLocations = []
+const userLocations = []
 
 for (let i = 0; i < users.length; i++) {
-  let locations = users[i].location;
+  const locations = users[i].location;
   userLocations.push(locations); 
   };
 console.log(userLocations);

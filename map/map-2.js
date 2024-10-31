@@ -19,10 +19,10 @@ const products = [
 
 /* ===============================C=O=D=E================================= */
 
-let productsWithFinalPrice = []
+const productsWithFinalPrice = []
 
 for (let i = 0; i < products.length; i++) {
-  let finalPriceArray = products[i].price * (1-products[i].discount );
+  const finalPriceArray = products[i].price * (1-products[i].discount );
   productsWithFinalPrice.push(finalPriceArray); 
   };
 console.log(productsWithFinalPrice);
