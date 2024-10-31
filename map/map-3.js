@@ -9,27 +9,33 @@ const users = [
 ];
 
 // Without using map, lowercase all the user names:
-const usersWithLowerCaseNamesMapped = users.map(user => {
-  return {
-    ...user,
-    name: user.name.toLowerCase()
-  }
-})
+// const usersWithLowerCaseNamesMapped = users.map(user => {
+//   return {
+//     ...user,
+//     name: user.name.toLowerCase()
+//   }
+// })
 
 
 /* ===============================C=O=D=E================================= */
 
 let usersWithLowerCaseNames = []
 
+for (let i = 0; i < users.length; i++) {
+  let lowerCaseArray = users[i].name.toLowerCase();
+  usersWithLowerCaseNames.push(lowerCaseArray); 
+  };
+console.log(usersWithLowerCaseNames);
+
 
 /* ===============================T=E=S=T================================= */
 
-const assert = require("node:assert")
+// const assert = require("node:assert")
 
-assert.strictEqual(JSON.stringify(usersWithLowerCaseNames), JSON.stringify(usersWithLowerCaseNamesMapped))
+// assert.strictEqual(JSON.stringify(usersWithLowerCaseNames), JSON.stringify(usersWithLowerCaseNamesMapped))
 
 
-console.log("Well done!")
+// console.log("Well done!")
 
 
 

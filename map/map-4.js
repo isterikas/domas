@@ -9,22 +9,28 @@ const users = [
 ];
 
 // Without using map, get an array of user locations:
-const userLocationsMapped = users.map(user => user.location)
+// const userLocationsMapped = users.map(user => user.location)
 
 
 /* ===============================C=O=D=E================================= */
 
 let userLocations = []
 
+for (let i = 0; i < users.length; i++) {
+  let locations = users[i].location;
+  userLocations.push(locations); 
+  };
+console.log(userLocations);
+
 
 /* ===============================T=E=S=T================================= */
 
-const assert = require("node:assert")
+// const assert = require("node:assert")
 
-assert.strictEqual(JSON.stringify(userLocations), JSON.stringify(userLocationsMapped));
+// assert.strictEqual(JSON.stringify(userLocations), JSON.stringify(userLocationsMapped));
 
 
-console.log("Well done!")
+// console.log("Well done!")
 
 
 

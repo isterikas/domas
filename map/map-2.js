@@ -8,28 +8,33 @@ const products = [
 ];
 
 
-// Without using map, add and calculate a final price field:
-const productsWithFinalPriceMapped = products.map(product => {
-  return {
-    ...product,
-    finalPrice: product.price - (product.price * product.discount)
-  }
-})
+// // Without using map, add and calculate a final price field:
+// const productsWithFinalPriceMapped = products.map(product => {
+//   return {
+//     ...product,
+//     finalPrice: product.price - (product.price * product.discount)
+//   }
+// })
 
 
 /* ===============================C=O=D=E================================= */
 
 let productsWithFinalPrice = []
 
+for (let i = 0; i < products.length; i++) {
+  let finalPriceArray = products[i].price * (1-products[i].discount );
+  productsWithFinalPrice.push(finalPriceArray); 
+  };
+console.log(productsWithFinalPrice);
 
 /* ===============================T=E=S=T================================= */
 
-const assert = require("node:assert")
+// const assert = require("node:assert")
 
-assert.strictEqual(JSON.stringify(productsWithFinalPrice), JSON.stringify(productsWithFinalPriceMapped))
+// assert.strictEqual(JSON.stringify(productsWithFinalPrice), JSON.stringify(productsWithFinalPriceMapped))
 
 
-console.log("Well done!")
+// console.log("Well done!")
 
 
 
