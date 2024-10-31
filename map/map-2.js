@@ -9,12 +9,12 @@ const products = [
 
 
 // // Without using map, add and calculate a final price field:
-// const productsWithFinalPriceMapped = products.map(product => {
-//   return {
-//     ...product,
-//     finalPrice: product.price - (product.price * product.discount)
-//   }
-// })
+const productsWithFinalPriceMapped = products.map(product => {
+  return {
+    ...product,
+    finalPrice: product.price - (product.price * product.discount)
+  }
+})
 
 
 /* ===============================C=O=D=E================================= */
@@ -29,12 +29,12 @@ console.log(productsWithFinalPrice);
 
 /* ===============================T=E=S=T================================= */
 
-// const assert = require("node:assert")
+const assert = require("node:assert")
 
-// assert.strictEqual(JSON.stringify(productsWithFinalPrice), JSON.stringify(productsWithFinalPriceMapped))
+assert.strictEqual(JSON.stringify(productsWithFinalPrice), JSON.stringify(productsWithFinalPriceMapped))
 
 
-// console.log("Well done!")
+console.log("Well done!")
 
 
 
