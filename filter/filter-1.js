@@ -21,9 +21,7 @@ const inactiveUsers = []
 for (let i = 0; i < users.length; i++) {
         if (users[i].isActive == false){
        inactiveUsers.push(users[i])
-        } else {
-          continue
-      }}
+        }}
 
 console.log(inactiveUsers);
 
