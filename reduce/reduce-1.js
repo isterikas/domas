@@ -9,25 +9,22 @@ const users = [
 ];
 
 // Without using reduce, get the average user age
-// const averageUserAgeReduce = users.reduce((acc, user) => acc + user.age, 0) / users.length
+const averageUserAgeReduce = users.reduce((acc, user) => acc + user.age, 0) / users.length
 
 /* ===============================C=O=D=E================================= */
 
-const calculateAge = () => {
   let ageAggregate = 0;
   for (let i = 0; i < users.length; i++) {
     ageAggregate+= users[i].age;
   }
   const averageUserAge = ageAggregate / users.length;
-  return averageUserAge;
-};
 
-console.log(calculateAge());
+console.log(averageUserAge);
 
 /* ===============================T=E=S=T================================= */
 
-// const assert = require("node:assert")
+const assert = require("node:assert")
 
-// assert.strictEqual(averageUserAge, averageUserAgeReduce)
+assert.strictEqual(averageUserAge, averageUserAgeReduce)
 
-// console.log("Well done!")
+console.log("Well done!")

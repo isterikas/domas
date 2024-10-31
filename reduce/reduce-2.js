@@ -10,31 +10,27 @@ const users = [
 
 
 // Without using reduce, get the number of active users
-// const activeUsersCountReduce = users.reduce((acc, user) => user.isActive ? acc + 1 : acc, 0)
+const activeUsersCountReduce = users.reduce((acc, user) => user.isActive ? acc + 1 : acc, 0)
 
 /* ===============================C=O=D=E================================= */
 
-const calculateActive = () => {
     let activeUsersCount = 0;
     for (let i = 0; i < users.length; i++) {
       if (users[i].isActive == false){
         continue
       } else {
         activeUsersCount++
-    }
-    }
-    return activeUsersCount
-  };
-  
-  console.log(calculateActive());
+    }}
+
+console.log(activeUsersCount);
 
 
 /* ===============================T=E=S=T================================= */
 
-// const assert = require("node:assert")
+const assert = require("node:assert")
 
-// assert.strictEqual(activeUsersCount, activeUsersCountReduce)
+assert.strictEqual(activeUsersCount, activeUsersCountReduce)
 
 
-// console.log("Well done!")
+console.log("Well done!")
 
